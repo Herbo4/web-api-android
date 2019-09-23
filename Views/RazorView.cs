@@ -42,25 +42,38 @@ WriteLiteral(" />\r\n    <script");
 
 WriteLiteral(" type=\"text/javascript\"");
 
-WriteLiteral(">// This javascript method calls C# by setting the browser\r\n        // to a URL w" +
-"ith a custom scheme that is registered in C#.\r\n        // All values are sent to" +
-" C# as part of the querystring\r\n        // This javascript method is called from" +
-" C#\r\n        function SetLabelText(text) {\r\n            var elm = document.getEl" +
-"ementById(\'label\');\r\n            elm.innerHTML = text;\r\n        }\r\n        funct" +
-"ion getDateNow() {\r\n            console.log(\'Getting Date Now\');\r\n            va" +
-"r xhttp = new XMLHttpRequest();\r\n            xhttp.open(\"GET\", \"http://koifrog.c" +
-"om/api/datetime/now\", true);\r\n            xhttp.onreadystatechange = function ()" +
-" {\r\n                if (this.readyState == 4 && this.status == 0) {\r\n           " +
-"         document.getElementById(\"label\").innerHTML = this.responseText;\r\n      " +
-"          } else {\r\n                    console.log(this.status);\r\n             " +
-"   }\r\n            };\r\n\r\n            xhttp.setRequestHeader(\"Content-type\", \"appl" +
-"ication/json\");\r\n            xhttp.setRequestHeader(\"Authorization\", \"Token ad41" +
-"40b1caa4f98160bdc979a71a7215ae5972fe\");\r\n\r\n            xhttp.send();\r\n        }\r" +
-"\n        function requestVal(uri) {\r\n            const resultSpan = document.get" +
-"ElementById(\'label\');\r\n\r\n            fetch(uri, { mode: \'no-cors\' })\r\n          " +
-"      .then(response => response.json())\r\n                .then(data => resultSp" +
-"an.innerText = data)\r\n                .catch(error => resultSpan.innerText = \'Se" +
-"e F12 Console for error\');\r\n        }</script>\r\n</head>\r\n<body>\r\n    <div");
+WriteLiteral(@">// This javascript method calls C# by setting the browser
+        // to a URL with a custom scheme that is registered in C#.
+        // All values are sent to C# as part of the querystring
+        // This javascript method is called from C#
+        function SetLabelText(text) {
+            var elm = document.getElementById('label');
+            elm.innerHTML = text;
+        }
+        function getDateNow() {
+            console.log('Getting Date Now');
+            var xhttp = new XMLHttpRequest();
+            xhttp.open(""GET"", ""http://koifrog.com/api/datetime/now"", true);
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 0) {
+                    document.getElementById(""label"").innerHTML = this.responseText;
+                } else {
+                    console.log(this.status);
+                }
+            };
+            xhttp.send();
+        }
+        function requestVal(uri) {
+            const resultSpan = document.getElementById('label');
+
+            fetch(uri, { mode: 'no-cors' })
+                .then(response => response.json())
+                .then(data => resultSpan.innerText = data)
+                .catch(error => resultSpan.innerText = 'See F12 Console for error');
+        }</script>
+</head>
+<body>
+    <div");
 
 WriteLiteral(" data-role=\"pagata-theme-b\"");
 
