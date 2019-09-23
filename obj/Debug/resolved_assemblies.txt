@@ -1,0 +1,16 @@
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/webAPI_client.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/Java.Interop.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/Mono.Android.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/mscorlib.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Core.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Runtime.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Web.Services.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Xml.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Net.Http.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Drawing.Common.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Runtime.Serialization.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.ServiceModel.Internals.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/Mono.Security.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.Numerics.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Debug/android/assets/System.ComponentModel.Composition.dll

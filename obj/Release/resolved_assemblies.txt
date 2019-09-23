@@ -1,0 +1,8 @@
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/webAPI_client.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/Java.Interop.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/Mono.Android.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/mscorlib.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/System.Core.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/System.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/System.Web.Services.dll
+/Users/amccoy/Projects/webAPI-client/webAPI-client/obj/Release/android/assets/System.Runtime.Serialization.dll

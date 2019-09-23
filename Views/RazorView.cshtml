@@ -1,0 +1,57 @@
+﻿@model Model1
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">// This javascript method calls C# by setting the browser
+        // to a URL with a custom scheme that is registered in C#.
+        // All values are sent to C# as part of the querystring
+        // This javascript method is called from C#
+        function SetLabelText(text) {
+            var elm = document.getElementById('label');
+            elm.innerHTML = text;
+        }
+        function getDateNow() {
+            console.log('Getting Date Now');
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "http://koifrog.com/api/datetime/now", true);
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 0) {
+                    document.getElementById("label").innerHTML = this.responseText;
+                } else {
+                    console.log(this.status);
+                }
+            };
+
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.setRequestHeader("Authorization", "Token ad4140b1caa4f98160bdc979a71a7215ae5972fe");
+
+            xhttp.send();
+        }
+        function requestVal(uri) {
+            const resultSpan = document.getElementById('label');
+
+            fetch(uri, { mode: 'no-cors' })
+                .then(response => response.json())
+                .then(data => resultSpan.innerText = data)
+                .catch(error => resultSpan.innerText = 'See F12 Console for error');
+        }</script>
+</head>
+<body>
+    <div data-role="pagata-theme-b">
+            <form>
+
+                <div data-role="content">
+
+                    <h1>Web API Client</h1>
+                    <p id="label">Responses Appear Here</p>
+                    <input type="button" id="now" name="now" value="What time is it now?" onclick="getDateNow()" />
+                    <br />
+                    <input type="button" id="now" name="now" value="RequestVal" onclick="requestVal('https://koifrog.com/api/datetime/now')" />
+                </div>
+
+
+            </form>
+
+        </div>
+    </body>
+</html>	
